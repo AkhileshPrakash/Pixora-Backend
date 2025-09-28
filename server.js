@@ -8,6 +8,7 @@ import crypto from 'crypto';
 import multer from 'multer'; 
 import axios from 'axios'; 
 import FormData from 'form-data'; // Used for constructing multipart requests for Telegram API
+// NOTE: Telegraf package and its logic are completely removed to fix the 409 Conflict error.
 
 // Use in-memory storage for Multer as the file is immediately sent to Telegram
 const upload = multer({ storage: multer.memoryStorage() }); 
